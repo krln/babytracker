@@ -8,15 +8,15 @@ SERVINGS = [
 	Serving.new(
 		50,
 		'Marchewka'
-		),
+	),
 	Serving.new(
 		100,
 		'Mleko sztuczne'
-		),
+	),
 	Serving.new(
 		2,
 		'Jabłko'
-		)
+	)
 ]
 
 get '/' do 
