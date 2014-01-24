@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a33w2qa<!DOCTYPE html>
 <html>
   <head>
     <title>Baby tracker</title>
@@ -48,7 +48,11 @@
       <h4>Dodaj jedzenie</h4>
       <form action="/create" method="post">
         <input type="text" name="name" placeholder="nazwa jedzenia" />
-        <% for serving in @servings.sort{|a,b| a.name <=> b.name } %>
+        <select name = product/>
+        <% for product in @products.sort{|a,b| a.name <=> b.name } %>
+          <option value = "<%= product.name%>"/>
+          <% end %>
+          </select>  
         <% end %>
         <input type="text" name="ilość"/>
         <input type="submit" value="dodaj" />
